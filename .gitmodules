@@ -1,0 +1,3 @@
+[submodule "plugins/ggTestSuitePlugin"]
+	path = plugins/ggTestSuitePlugin
+	url = https://github.com/garygolden/ggTestSuitePlugin

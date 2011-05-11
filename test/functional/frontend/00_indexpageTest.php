@@ -6,7 +6,7 @@
  *   - display logo with non-empty alt=""
  *   - explain pricing
  *   - allow to order
- *   - display Google Checkout logo
+ *   - display payment methods logos
  * 
  * The index page must link to:
  *   - login
@@ -14,9 +14,6 @@
  *   - blog
  *   - server list
  *   
- * Google Checkout button must follow google policies:
- * http://code.google.com/apis/checkout/developer/Google_Checkout_XML_API.html#google_checkout_buttons
- * 
  * @see doc/use cases.dia
  */
 
@@ -39,9 +36,12 @@ $browser->get('/')
     ->info('link to checkout exists')
     ->xPath('//a[contains(@href, "/checkout")]')
     
-    // @todo make url precise
-    ->info('footer has Google Checkout logo')
-    ->xPath('//div[@id="footer"]//img[contains(@src, "checkout.google.com")]')
+    // @todo list all available methods
+    ->info('footer has payment methods logos')
+    ->xPath('//div[@id="footer"]//img[contains(@src, "/images/logo/visa.png")]')
+    ->xPath('//div[@id="footer"]//img[contains(@src, "/images/logo/mastercard.png")]')
+    ->xPath('//div[@id="footer"]//img[contains(@src, "/images/logo/paypal.png")]')
+    ->xPath('//div[@id="footer"]//img[contains(@src, "/images/logo/2checkout.png")]')
     
     // @todo generate urls using symfony routing
     ->info('links to /login')
@@ -55,8 +55,6 @@ $browser->get('/')
     
     ->info('links to /servers')
     ->xPath('//a[contains(@href, "/servers")]')
-    
-    // @todo ensure google policies
     
   ->end()
 ;

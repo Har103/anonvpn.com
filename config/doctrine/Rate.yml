@@ -1,0 +1,20 @@
+Rate:
+  columns:
+    id:
+      type: integer(1)
+      unsigned: true
+      primary: true
+      comment: "This id MUST be in sync with product_id within 2co system"
+    title:
+      type: string(100)
+      notnull: true
+    price:
+      type: float(5)
+      scale: 2
+      unsigned: true
+      notnull: true
+    transfer:
+      type: integer(3)
+      unsigned: true
+      notnull: true
+      comment: "Allowed montly transfer in megabytes (0 for unlimited)"

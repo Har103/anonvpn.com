@@ -1,3 +1,6 @@
 [submodule "plugins/ggTestSuitePlugin"]
 	path = plugins/ggTestSuitePlugin
 	url = https://github.com/garygolden/ggTestSuitePlugin
+[submodule "lib/vendor/TwoCheckout"]
+	path = lib/vendor/TwoCheckout
+	url = https://github.com/garygolden/TwoCheckout.git

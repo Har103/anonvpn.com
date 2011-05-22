@@ -7,6 +7,10 @@ Options +FollowSymLinks +ExecCGI
   # getting no_script_name to work
   #RewriteBase /
 
+  # Redirect "naked" domain to www.
+  RewriteCond %{SERVER_NAME} !^www\.
+  RewriteRule (.*) http://www.%{SERVER_NAME}/$1 [L,R=301]
+
   # we skip all files with .something
   #RewriteCond %{REQUEST_URI} \..+$
   #RewriteCond %{REQUEST_URI} !\.html$

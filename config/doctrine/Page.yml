@@ -1,0 +1,19 @@
+Page:
+  actAs:
+    Sluggable:
+      canUpdate: true
+    Timestampable: ~
+  columns:
+    id:
+      type: integer(2)
+      unsigned: true
+      primary: true
+      autoincrement: true
+    title:
+      type: string(255)
+    keywords:
+      type: string(255)
+    description:
+      type: string(255)
+    content:
+      type: string(4096)

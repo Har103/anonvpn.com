@@ -17,6 +17,5 @@ class staticActions extends sfActions
   */
   public function executeIndex(sfWebRequest $request)
   {
-    $this->forward('default', 'module');
   }
 }

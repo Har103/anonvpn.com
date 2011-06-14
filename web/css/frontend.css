@@ -5,7 +5,7 @@ Released for free under a Creative Commons Attribution 3.0 License
 */
 
 body { margin:0; padding:0; width:100%; color:#9a9a9a; font:normal 12px/1.8em Arial, Helvetica, sans-serif;}
-html, .main { padding:0; margin:0; background:#f1f1f1 url(images/main_bg.gif) top repeat-x;}
+html, .main { padding:0; margin:0; background:#f1f1f1 url(/images/main_bg.gif) top repeat-x;}
 .clr { clear:both; padding:0; margin:0; width:100%; font-size:0px; line-height:0px;}
 .logo { padding:15px 0 20px 0; margin:0 auto; width:450px; float:left;}
 .logo img { float:left; margin:0 10px 0 0; }
@@ -20,7 +20,7 @@ p { margin:8px 0; padding:0 0 8px 0; font:normal 12px/1.8em Arial, Helvetica, sa
 p.spec { text-align:right;}
 a { color:#78bbe6; text-decoration:none;}
 a:hover { text-decoration:underline;}
-a.rm, a.com { margin-left:8px; padding:9px 12px; background:url(images/a_bg.gif) repeat-x top; text-decoration:none; color:#fff;}
+a.rm, a.com { margin-left:8px; padding:9px 12px; background:url(/images/a_bg.gif) repeat-x top; text-decoration:none; color:#fff;}
 
 .header, .content, .menu_nav, .fbg, .footer, form, ol, ol li, ul, .content .mainbar, .content .sidebar { margin:0; padding:0;}
 
@@ -35,12 +35,12 @@ a.rm, a.com { margin-left:8px; padding:9px 12px; background:url(images/a_bg.gif)
 .menu_nav { margin:20px 0 0 0; padding:3px 0 0 10px; float:right; width:500px;}
 .menu_nav ul { list-style:none; padding:0; margin:0; }
 .menu_nav li { float:left; padding:0 5px; }
-.menu_nav li a { background:url(images/r_menu_one.gif) no-repeat right; font:normal 13px Arial, Helvetica, sans-serif; color:#878989; display:block; float:left; padding:10px 0; }
-.menu_nav li a span {background:url(images/l_menu_one.gif) no-repeat left; padding:10px 15px; }
-.menu_nav li a:hover { text-decoration:none; color:#fff; background:url(images/r_menu.gif) no-repeat right; }
-.menu_nav li a:hover span { text-decoration:none; color:#fff; background:url(images/l_menu.gif) no-repeat left; }
-.menu_nav li.active a { text-decoration:none; color:#fff; background:url(images/r_menu.gif) no-repeat right; }
-.menu_nav li.active a span {text-decoration:none; color:#fff; background:url(images/l_menu.gif) no-repeat left; }
+.menu_nav li a { background:url(/images/r_menu_one.gif) no-repeat right; font:normal 13px Arial, Helvetica, sans-serif; color:#878989; display:block; float:left; padding:10px 0; }
+.menu_nav li a span {background:url(/images/l_menu_one.gif) no-repeat left; padding:10px 15px; }
+.menu_nav li a:hover { text-decoration:none; color:#fff; background:url(/images/r_menu.gif) no-repeat right; }
+.menu_nav li a:hover span { text-decoration:none; color:#fff; background:url(/images/l_menu.gif) no-repeat left; }
+.menu_nav li.active a { text-decoration:none; color:#fff; background:url(/images/r_menu.gif) no-repeat right; }
+.menu_nav li.active a span {text-decoration:none; color:#fff; background:url(/images/l_menu.gif) no-repeat left; }
 
 /* search */
 .search { margin:0; padding:20px 0;}
@@ -63,8 +63,8 @@ ul.sb_menu, ul.ex_menu { margin:0; padding:0; list-style:none; color:#959595;}
 ul.sb_menu li, ul.ex_menu li { margin:0;}
 ul.sb_menu li { padding:4px 0 4px 12px; width:220px;}
 ul.ex_menu li { padding:4px 0 8px 12px;}
-ul.sb_menu li a, ul.ex_menu li a { color:#959595; text-decoration:none; margin-left:-12px; padding-left:22px;  background:url(images/li_a_hover.gif) left no-repeat;}
-ul.sb_menu li a:hover, ul.ex_menu li a:hover { color:#78bbe6; text-decoration:underline; background:url(images/li_a.gif) left no-repeat;}
+ul.sb_menu li a, ul.ex_menu li a { color:#959595; text-decoration:none; margin-left:-12px; padding-left:22px;  background:url(/images/li_a_hover.gif) left no-repeat;}
+ul.sb_menu li a:hover, ul.ex_menu li a:hover { color:#78bbe6; text-decoration:underline; background:url(/images/li_a.gif) left no-repeat;}
 ul.sb_menu li a:hover { text-decoration:underline;}
 ul.ex_menu li a:hover { text-decoration:none;}
 
@@ -73,7 +73,7 @@ ul.ex_menu li a:hover { text-decoration:none;}
 .content .mainbar .comment img.userpic { border:1px solid #dedede; margin:10px 16px 0 0; padding:0; float:left;}
 
 /* fbg */
-.fbg { padding:10px 0 0 0;background: #1e557a url(images/fbg_bg.gif) bottom repeat-x; margin:10px 0 0 0;}
+.fbg { padding:10px 0 0 0;background: #1e557a url(/images/fbg_bg.gif) bottom repeat-x; margin:10px 0 0 0;}
 .fbg_resize { margin:0 auto; padding:20px 20px; width:930px;}
 .fbg  h2 { color:#5190bb;}
 .fbg  p { color:#fff;}

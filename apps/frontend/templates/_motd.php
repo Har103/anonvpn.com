@@ -1,5 +1,8 @@
-<h2>best proposition</h2>
+<h2>Virtual Private Network is...</h2>
 <p>
-	<strong>More beautiful templates </strong><br />
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac magna a turpis ornare aliquam id hendrerit nisl. Pellentesque adipiscing blandit mollis. Curabitur varius est et sem rhoncus et pretium massa molestie.
+	<strong>Technology which allows you to change IP address and pass internet access limitaions.</strong><br />
+	You will be connected to internet through one of our servers, thus hosts you visit will not see your IP.<br />
+	Connection between you and us is compressed and encrypted, thus your provider will see only random data.<br />
+	This way you can use any resources which may be restricted by your ISP.<br />
+	Furthermore, compression will speed things up ;)
 </p>

@@ -21,8 +21,6 @@
 						<?php include_partial('global/motd')?>
           	<div class="clr"></div>
           </div>
-
-
         </div>
       </div>
       <div class="clr"></div>

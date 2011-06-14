@@ -51,7 +51,6 @@ a.rm, a.com { margin-left:8px; padding:9px 12px; background:url(/images/a_bg.gif
 /* content */
 .content { padding:10px 0 0 0;}
 .content_resize { margin:0 auto; padding:20px 0 0 0; width:970px;}
-.content .mainbar { margin:0; float:right;}
 .content .mainbar img { float:left; padding:4px; margin:0 10px 0 0; border:1px solid #eaecec; background-color:#fff;}
 .content .mainbar .article { margin:0 0 20px 0;  padding:30px 20px;  width:610px;}
 .content .mainbar .article span.butons a { margin:0 5px 0 0; float:right; color:#9a9a9a; padding:1px 10px; text-decoration:none;  border:1px solid #ebe8e8; background:#fbfbfc;}

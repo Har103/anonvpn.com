@@ -1,28 +1,7 @@
-<h1>Blogposts List</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Id</th>
-      <th>Title</th>
-      <th>Content</th>
-      <th>Slug</th>
-      <th>Created at</th>
-      <th>Updated at</th>
-    </tr>
-  </thead>
-  <tbody>
-    <?php foreach ($blogposts as $blogpost): ?>
-    <tr>
-      <td><a href="<?php echo url_for('blog/edit?id='.$blogpost->getId()) ?>"><?php echo $blogpost->getId() ?></a></td>
-      <td><?php echo $blogpost->getTitle() ?></td>
-      <td><?php echo $blogpost->getContent() ?></td>
-      <td><?php echo $blogpost->getSlug() ?></td>
-      <td><?php echo $blogpost->getCreatedAt() ?></td>
-      <td><?php echo $blogpost->getUpdatedAt() ?></td>
-    </tr>
-    <?php endforeach; ?>
-  </tbody>
-</table>
-
-  <a href="<?php echo url_for('blog/new') ?>">New</a>
+<?php
+// stub
+include_partial('blog/teaser', array('blogpost' => new Blogpost()));
+?>
+<div class="article" style="padding:5px 20px 2px 20px;">
+  <p>Page 1 of 2 <span class="butons"><a href="#">3</a><a href="#">2</a> <a href="#" class="active">1</a></span></p>
+</div>

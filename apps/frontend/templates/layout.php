@@ -13,16 +13,13 @@
     <div class="main">
       <div class="header">
         <div class="header_resize">
-
 					<?php include_partial('global/logo')?>
 					<?php include_partial('global/upperMenu')?>
-
           <div class="clr"></div>
-          <div class="header_img"><img src="images/main_img.png" alt="image" width="271" height="234" />
-          <h2>best proposition</h2>
-          <p><strong>More beautiful templates </strong><br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac magna a turpis ornare aliquam id hendrerit nisl. Pellentesque adipiscing blandit mollis. Curabitur varius est et sem rhoncus et pretium massa molestie. </p>
-          <div class="clr"></div>
+          <div class="header_img">
+          	<img src="images/main_img.png" alt="image" width="271" height="234" />
+						<?php include_partial('global/motd')?>
+          	<div class="clr"></div>
           </div>
 
 

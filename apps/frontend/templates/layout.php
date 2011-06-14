@@ -13,9 +13,8 @@
     <div class="main">
       <div class="header">
         <div class="header_resize">
-          <div class="logo">
-            <h1><a href="index.html">corporate<span> NTT</span></a><small> Simple web template</small></h1>
-          </div>
+
+					<?php include_partial('global/logo'); ?>
 
           <div class="menu_nav">
            <ul>

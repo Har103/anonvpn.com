@@ -4,7 +4,7 @@ Design by http://www.templateaccess.com
 Released for free under a Creative Commons Attribution 3.0 License
 */
 
-body { margin:0; padding:0; width:100%; color:#333; font:normal 12px/1.8em Arial, Helvetica, sans-serif;}
+body { margin:0; padding:0; width:100%; color:#333; font:normal 16px/2em Arial, Helvetica, sans-serif;}
 html, .main { padding:0; margin:0; background:#f1f1f1 url(/images/main_bg.gif) top repeat-x;}
 .clr { clear:both; padding:0; margin:0; width:100%; font-size:0px; line-height:0px;}
 .logo { padding:15px 0 20px 0; margin:0 auto; width:450px; float:left;}
@@ -15,8 +15,8 @@ h1 a:hover { color:#78bbe6; text-decoration:none;}
 h1 a:hover span { color:#fff;}
 h1 span { color:#78bbe6;}
 h1 small {  color:#fff; float:left; padding:18px 0 0 10px; font:normal 12px Arial, Helvetica, sans-serif; letter-spacing:normal;}
-h2 { font:normal 24px Arial, Helvetica, sans-serif; padding:0; margin:5px 0; color:#595959;}
-p { margin:8px 0; padding:0 0 8px 0; font:normal 12px/1.8em Arial, Helvetica, sans-serif;}
+h2 { font:normal 2em Arial, Helvetica, sans-serif; padding:0; margin:5px 0; color:#595959;}
+p { margin:8px 0; padding:0 0 8px 0; font:normal 1em/1.8em Arial, Helvetica, sans-serif;}
 p.spec { text-align:right;}
 a { color:#78bbe6; text-decoration:none;}
 a:hover { text-decoration:underline;}
@@ -103,3 +103,43 @@ ol li .send { margin:16px 0 0 0;}
 
 /* dashboard */
 .panel_dashboard { position: absolute; margin: 10px 0 0 10px; width: 250px; height: 157px; }
+
+/* homepage */
+.content .mainbar .basic-package { padding: 0 0 20px 20px; width:610px;}
+.content .mainbar .basic-package ul { margin: 0 0 0 3em; }
+.content .mainbar .basic-package div.price { float: left; font-size: 3.5em; padding: .8em 0 1em 0; width: 200px; color: #00820A; }
+.content .mainbar .basic-package div.button { margin: 2.5em 0 0 0; }
+
+/* buttons */
+div.button input, div.button button {
+    color: #fff;
+    margin-top: 5px;
+    background : #009ac7;
+    background: -moz-linear-gradient(
+        top,
+        #009ac7,
+        #00728C
+    );
+    background: -webkit-gradient(
+        linear, 0 0, 0 100%,
+        color-stop(0, #009ac7),
+        color-stop(1, #00728C)
+    );
+    cursor : pointer;
+    border : 0;
+    padding: 3px;
+}
+
+div.button input:hover, div.button button:hover {
+    background : #00728C;
+    background: -moz-linear-gradient(
+        top,
+        #00728C,
+        #009ac7
+    );
+    background: -webkit-gradient(
+        linear, 0 0, 0 100%,
+        color-stop(0, #00728C),
+        color-stop(1, #009ac7)
+    );
+}

@@ -1,0 +1,10 @@
+Blogpost:
+  actAs:
+    Sluggable:
+      canUpdate: true
+      options:
+        notnull: true
+    Timestampable: ~
+  columns:
+    title: string(100)
+    content: string(4096)

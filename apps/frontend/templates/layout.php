@@ -43,9 +43,7 @@
           	<?php include_partial('global/ourTechnologies')?>
           </div>
           <div class="col c3">
-            <h2><span>Contact</span></h2>
-            <p>Nullam quam lorem, tristique non vestibulum nec, consectetur in risus. Aliquam a quam vel leo gravida gravida eu porttitor dui. Nulla pharetra, mauris vitae interdum dignissim, justo nunc suscipit ipsum. <a href="#">mail@example.com</a><br />
-              <a href="#">+1 (123) 444-5677</a></p>
+          	<?php include_partial('global/servers')?>
           </div>
           <div class="clr"></div>
         </div>

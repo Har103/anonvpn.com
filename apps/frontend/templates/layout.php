@@ -36,7 +36,7 @@
               <span>
               <input name="q" type="text" class="keywords" id="textfield" maxlength="50" value="Search..." />
 
-              <input name="b" type="image" src="images/search.gif" class="button" />
+              <input name="b" type="image" src="/images/search.gif" class="button" />
               </span>
             </form>
           </div>
@@ -74,7 +74,7 @@
             <div class="gadget">
               <h2>Wise Words</h2>
               <div class="clr"></div>
-              <p>   <img src="images/test_1.gif" alt="image" width="19" height="20" /> <em>We can let circumstances rule us, or we can take charge and rule our lives from within </em>.<img src="images/test_2.gif" alt="image" width="19" height="20" /></p>
+              <p>   <img src="/images/test_1.gif" alt="image" width="19" height="20" /> <em>We can let circumstances rule us, or we can take charge and rule our lives from within </em>.<img src="/images/test_2.gif" alt="image" width="19" height="20" /></p>
               <p style="float:right;"><strong>Earl Nightingale</strong></p>
               </div>
                  </div>
@@ -85,7 +85,7 @@
         <div class="fbg_resize">
           <div class="col c1">
             <h2><span>Image Gallery</span></h2>
-            <a href="#"><img src="images/gallery_1.jpg" width="58" height="58" alt="pix" /></a> <a href="#"><img src="images/gallery_2.jpg" width="58" height="58" alt="pix" /></a> <a href="#"><img src="images/gallery_3.jpg" width="58" height="58" alt="pix" /></a> <a href="#"><img src="images/gallery_4.jpg" width="58" height="58" alt="pix" /></a> <a href="#"><img src="images/gallery_5.jpg" width="58" height="58" alt="pix" /></a> <a href="#"><img src="images/gallery_6.jpg" width="58" height="58" alt="pix" /></a> </div>
+            <a href="#"><img src="/images/gallery_1.jpg" width="58" height="58" alt="pix" /></a> <a href="#"><img src="/images/gallery_2.jpg" width="58" height="58" alt="pix" /></a> <a href="#"><img src="/images/gallery_3.jpg" width="58" height="58" alt="pix" /></a> <a href="#"><img src="/images/gallery_4.jpg" width="58" height="58" alt="pix" /></a> <a href="#"><img src="/images/gallery_5.jpg" width="58" height="58" alt="pix" /></a> <a href="#"><img src="/images/gallery_6.jpg" width="58" height="58" alt="pix" /></a> </div>
           <div class="col c2">
             <h2><span>Lorem Ipsum</span></h2>
             <p>Lorem ipsum dolor<br />

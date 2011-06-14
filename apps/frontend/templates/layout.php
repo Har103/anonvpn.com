@@ -47,11 +47,7 @@
           </div>
           <div class="clr"></div>
         </div>
-        <div class="footer">
-          <p class="lr">&copy; Copyright <a href="#">MyWebSite</a>.</p>
-          <p class="lf">Layout by Cool <a href="http://www.coolwebtemplates.net/">Website Templates</a></p>
-          <div class="clr"></div>
-        </div>
+				<?php include_partial('global/footer')?>
       </div>
     </div>
   </body>

@@ -14,7 +14,7 @@ default:
 
   stylesheets:    [frontend.css]
 
-  javascripts:    []
+  javascripts:    [frontend.js]
 
   has_layout:     true
   layout:         layout

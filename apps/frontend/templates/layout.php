@@ -17,7 +17,8 @@
 					<?php include_partial('global/upperMenu')?>
           <div class="clr"></div>
           <div class="header_img">
-          	<img src="images/main_img.png" alt="image" width="271" height="234" />
+          	<?php echo image_tag('main_img.png', array('alt' => 'Dashboard display', 'width' => '271', 'height' => '234'))?>
+          	<?php include_component('panel', 'dashboard')?>
 						<?php include_partial('global/motd')?>
           	<div class="clr"></div>
           </div>

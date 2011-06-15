@@ -1,0 +1,12 @@
+Server:
+  columns:
+    hostname:
+      type: string(50)
+      notnull: true
+      primary: true
+    country:
+      type: char(2)
+      comment: "Country alpha-2 ISO code"
+  indexes:
+    country:
+      fields: [country]

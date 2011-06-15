@@ -40,10 +40,10 @@
           	<?php include_partial('static/technologies')?>
           </div>
           <div class="col c2">
-          	<?php include_partial('global/weAccept')?>
+          	<?php include_partial('static/servers')?>
           </div>
           <div class="col c3">
-          	<?php include_partial('global/servers')?>
+          	<?php include_partial('global/weAccept')?>
           </div>
           <div class="clr"></div>
         </div>

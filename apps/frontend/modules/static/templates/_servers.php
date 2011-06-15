@@ -1,4 +1,4 @@
-<h2><span>Europe/Worldwide servers</span></h2>
-<p style="color: red;">
-Print here how many servers and where.
+<h2><span>Worldwide servers</span></h2>
+<p>
+We have servers in US and UK.
 </p>

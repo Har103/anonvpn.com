@@ -4,6 +4,10 @@ Design by http://www.templateaccess.com
 Released for free under a Creative Commons Attribution 3.0 License
 */
 
+/* std */
+.floatl { float: left; }
+.floatr { float: right; }
+
 body { margin:0; padding:0; width:100%; color:#333; font:normal 16px/2em Arial, Helvetica, sans-serif;}
 html, .main { padding:0; margin:0; background:#f1f1f1 url(/images/main_bg.gif) top repeat-x;}
 .clr { clear:both; padding:0; margin:0; width:100%; font-size:0px; line-height:0px;}

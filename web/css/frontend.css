@@ -77,7 +77,7 @@ ul.ex_menu li a:hover { text-decoration:none;}
 
 /* fbg */
 .fbg { padding:10px 0 0 0;background: #1e557a url(/images/fbg_bg.gif) bottom repeat-x; margin:10px 0 0 0;}
-.fbg_resize { margin:0 auto; padding:20px 20px; width:930px;}
+.fbg_resize { margin:0 auto; padding:20px 0; width:930px;}
 .fbg  h2 { color:#5190bb;}
 .fbg  p { color:#fff;}
 .fbg  a { color:#5190bb; text-decoration:none;}
@@ -109,10 +109,16 @@ ol li .send { margin:16px 0 0 0;}
 .panel_dashboard { position: absolute; margin: 10px 0 0 10px; width: 250px; height: 157px; }
 
 /* homepage */
-.content .mainbar .basic-package { padding: 0 0 20px 20px; width:610px;}
-.content .mainbar .basic-package ul { margin: 0 0 0 3em; }
-.content .mainbar .basic-package div.price { float: left; font-size: 3.5em; padding: .8em 0 1em 0; width: 200px; color: #00820A; }
-.content .mainbar .basic-package div.button { margin: 2.5em 0 0 0; }
+div.homepage-widget { padding: 0 0 20px 20px; width:465px; }
+div.homepage-widget ul { margin: 0 0 0 3em; }
+div.homepage-widget div.price { float: left; font-size: 3.5em; padding: .8em 0 1em 0; width: 200px; color: #00820A; }
+div.homepage-widget div.button { margin: 2.5em 0 0 0; }
+
+/* extras widget */
+.extras table { width: 100%; }
+.extras .left { width: 40%; }
+.extras .right { font-weight: bold; }
+
 
 /* buttons */
 div.button input, div.button button {

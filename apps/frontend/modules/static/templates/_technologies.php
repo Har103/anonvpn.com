@@ -7,5 +7,5 @@ Linux and MacOS support it as well.
 Communication is encrypted with 256bit key RSA algorithm and gzipped.
 </p>
 <p style="color: red;">
-<b>Put correct numbers here</b>
+Put correct numbers here
 </p>

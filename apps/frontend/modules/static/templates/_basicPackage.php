@@ -1,4 +1,4 @@
-<div class="basic-package">
+<div class="homepage-widget basic-package">
   <h2>Basic VPN service</h2>
   <div class="clr"></div>
   <p>Standard set of features suitable for most users.</p>

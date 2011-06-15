@@ -43,7 +43,7 @@
           	<?php include_partial('static/servers')?>
           </div>
           <div class="col c3">
-          	<?php include_partial('global/weAccept')?>
+          	<?php include_partial('static/weaccept')?>
           </div>
           <div class="clr"></div>
         </div>

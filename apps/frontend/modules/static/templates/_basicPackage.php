@@ -7,11 +7,11 @@
 		<li>Web control panel</li>
 		<li>Encrypted VPN using PPTP</li>
 		<li>Access to VPN servers in Europe</li>
-		<li>50GB of transfer</li>
+		<li>Unlimited transfer</li>
 		<li>Technical support</li>
 		<li>7-day money back guarantee</li>
 	</ul>
-	<div class="price">$7</div>
+	<div class="price">only $3</div>
 	<div class="button">
   	<form action='https://www.2checkout.com/checkout/purchase' method='post'>
       <input type='hidden' name='sid' value='1507059' />
@@ -20,7 +20,7 @@
       <?php if ($sf_context->getConfiguration()->getEnvironment() === 'dev') : ?>
       <input type='hidden' name='demo' value='Y' />
       <?php endif; ?>
-      <input class="button" name='submit' type='submit' value='Purchase for $7' />
+      <input class="button" name='submit' type='submit' value='Purchase' />
   	</form>
 	</div>
 </div>

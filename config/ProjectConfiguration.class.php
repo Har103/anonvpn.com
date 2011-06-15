@@ -5,6 +5,8 @@ sfCoreAutoload::register();
 
 class ProjectConfiguration extends sfProjectConfiguration
 {
+  protected $twocheckoutApi;
+
   public function setup()
   {
     $this->enablePlugins('sfDoctrinePlugin');
@@ -21,6 +23,17 @@ class ProjectConfiguration extends sfProjectConfiguration
   {
     $manager->setCollate('utf8_unicode_ci');
     $manager->setCharset('utf8');
+  }
+
+  public function getTwocheckoutApi()
+  {
+    if ($this->twocheckoutApi === null)
+    {
+      $credentials = sfConfig::get('app_2co_api');
+      $this->twocheckoutApi = new TwoCheckout_Api($credentials['username'], $credentials['password']);
+    }
+
+    return $this->twocheckoutApi;
   }
 
   /**

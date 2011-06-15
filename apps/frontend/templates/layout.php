@@ -37,10 +37,10 @@
       <div class="fbg">
         <div class="fbg_resize">
           <div class="col c1">
-          	<?php include_partial('global/weAccept')?>
+          	<?php include_partial('static/technologies')?>
           </div>
           <div class="col c2">
-          	<?php include_partial('global/ourTechnologies')?>
+          	<?php include_partial('global/weAccept')?>
           </div>
           <div class="col c3">
           	<?php include_partial('global/servers')?>

@@ -111,7 +111,7 @@ ol li .send { margin:16px 0 0 0;}
 div.homepage-widget { padding: 0 0 20px 20px; width:465px; }
 div.homepage-widget ul { margin: 0 0 0 3em; }
 div.homepage-widget div.price { float: left; font-size: 3.5em; padding: .8em 0 1em 0; width: 200px; color: #00820A; }
-div.homepage-widget div.button { margin: 2.5em 0 0 0; }
+div.homepage-widget div.button input.button { margin: 3em 0 0 5em; padding: .4em 1em; }
 
 /* extras widget */
 .extras table { width: 100%; }

@@ -12,5 +12,9 @@ class CustomerForm extends BaseCustomerForm
 {
   public function configure()
   {
+    $this->setValidator('email', new sfValidatorAnd(array(
+      $this->getValidator('email'),
+      new sfValidatorEmail(array(), array('invalid' => 'Invalid email.'))
+    )));
   }
 }

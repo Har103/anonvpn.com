@@ -2,4 +2,5 @@
 Customer:
   Customer_0:
     email: mail@garygolden.me
+    password: cipich9A
 <?php endif; ?>

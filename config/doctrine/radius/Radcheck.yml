@@ -1,0 +1,22 @@
+Radcheck:
+  columns:
+    id:
+      type: integer(2)
+      unsigned: true
+      primary: true
+      autoincrement: true
+    username:
+      type: string(64)
+      notnull: true
+      comment: "Cannot rename to email, because used in radius dialup.conf"
+    attr:
+      type: string(64)
+      notnull: true
+      default: 'Cleartext-Password'
+    op:
+      type: char(2)
+      default: ':='
+      notnull: true
+    value:
+      type: string(253)
+      notnull: true

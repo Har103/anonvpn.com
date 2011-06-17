@@ -1,10 +1,16 @@
 # used by radius
 Server:
   columns:
+    id:
+      type: integer(2)
+      unsigned: true
+      primary: true
+      autoincrement: true
+      comment: "id is required for radius :("
     hostname:
       type: string(50)
       notnull: true
-      primary: true
+      unique: true
     secret:
       type: char(16)
       notnull: true

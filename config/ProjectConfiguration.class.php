@@ -9,14 +9,14 @@ class ProjectConfiguration extends sfProjectConfiguration
 
   public function setup()
   {
-    $this->enablePlugins('sfDoctrinePlugin');
-    $this->enablePlugins('sfTaskExtraPlugin');
-    $this->enablePlugins('ggTestSuitePlugin');
-
     self::enableZendFramework(sfConfig::get('sf_lib_dir') . DIRECTORY_SEPARATOR . 'vendor');
 
     // enable TwoCheckout autoloading
     self::enableZendFramework()->registerNamespace('TwoCheckout_');
+
+    $this->enablePlugins('sfDoctrinePlugin');
+    $this->enablePlugins('sfTaskExtraPlugin');
+    $this->enablePlugins('ggTestSuitePlugin');
   }
 
   public function configureDoctrine(Doctrine_Manager $manager)

@@ -1,9 +1,14 @@
+# used by radius
 Server:
   columns:
     hostname:
       type: string(50)
       notnull: true
       primary: true
+    secret:
+      type: char(16)
+      notnull: true
+      comment: "Shared secret to authenticate remote client"
     country:
       type: char(2)
       comment: "Country alpha-2 ISO code"

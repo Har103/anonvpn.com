@@ -13,7 +13,8 @@ Radcheck:
       notnull: true
       default: 'Cleartext-Password'
     op:
-      type: char(2)
+      type: enum
+      values: [':=', '==', '+=', '!=', '>', '>=', '<', '<=', '=~', '!~', '=*', '!*']
       default: ':='
       notnull: true
     value:

@@ -17,6 +17,7 @@ generator:
         created_at:
           label: Member since
       list:
+        display: [=email, created_at]
         object_actions:
           delete: ~
       filter:  ~

@@ -16,6 +16,8 @@ generator:
       fields:
         created_at:
           label: Member since
+        password:
+          help: Login disabled if empty.
       list:
         display: [=email, created_at]
         object_actions:

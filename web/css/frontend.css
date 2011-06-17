@@ -43,8 +43,8 @@ a.rm, a.com { margin-left:8px; padding:9px 12px; background:url(/images/a_bg.gif
 .menu_nav li a span {background:url(/images/l_menu_one.gif) no-repeat left; padding:10px 15px; }
 .menu_nav li a:hover { text-decoration:none; color:#fff; background:url(/images/r_menu.gif) no-repeat right; }
 .menu_nav li a:hover span { text-decoration:none; color:#fff; background:url(/images/l_menu.gif) no-repeat left; }
-.menu_nav li.active a { text-decoration:none; color:#fff; background:url(/images/r_menu.gif) no-repeat right; }
-.menu_nav li.active a span {text-decoration:none; color:#fff; background:url(/images/l_menu.gif) no-repeat left; }
+.menu_nav li.current a { text-decoration:none; color:#fff; background:url(/images/r_menu.gif) no-repeat right; }
+.menu_nav li.current a span {text-decoration:none; color:#fff; background:url(/images/l_menu.gif) no-repeat left; }
 
 /* search */
 .search { margin:0; padding:20px 0;}

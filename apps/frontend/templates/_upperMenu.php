@@ -1,10 +1,15 @@
+<?php
+$menu = new ioMenu(array('class' => null));
+$menu->addChild('Home', '@homepage');
+
+// wrap all items with <span> (required by css)
+foreach ($menu as $item)
+{
+  $item->setName('<span>' . $item->getName() . '</span>');
+}
+?>
+
 <div class="menu_nav">
- 	<ul>
-  	<li class="active"><a href="index.html"><span>Home</span></a></li>
-    <li><a href="support.html"><span>Support</span></a></li>
-    <li><a href="about.html"><span>About Us</span></a></li>
-    <li><a href="blog.html"><span>Blog</span></a></li>
-    <li><a href="contact.html"><span>Contact Us</span></a></li>
-	</ul>
+ 	<?php echo $menu?>
   <div class="clr"></div>
 </div>

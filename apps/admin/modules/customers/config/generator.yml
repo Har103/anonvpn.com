@@ -13,9 +13,14 @@ generator:
 
     config:
       actions: ~
-      fields:  ~
-      list:    ~
+      fields:
+        created_at:
+          label: Member since
+      list:
+        object_actions:
+          delete: ~
       filter:  ~
-      form:    ~
+      form:
+        display: [email]
       edit:    ~
       new:     ~

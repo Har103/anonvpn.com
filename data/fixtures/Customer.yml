@@ -1,6 +1,5 @@
 <?php if(getenv('SYMFONY_DEV')): ?>
 Customer:
   Customer_0:
-    username: mail@garygolden.me
-    value: cipich9A
+    email: mail@garygolden.me
 <?php endif; ?>

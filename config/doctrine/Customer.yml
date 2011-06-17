@@ -1,20 +1,12 @@
 # radius uses this table
 Customer:
+  actAs:
+    Timestampable:
+      updated:
+        disabled: true
   columns:
-    # TODO: subject of rename to "email"
-    username:
+    email:
       type: string(64)
       notnull: true
       primary: true
       comment: "Unique email; primary key"
-    attr:
-      type: string(64)
-      notnull: true
-      default: 'Cleartext-Password'
-    op:
-      type: char(2)
-      default: ':='
-      notnull: true
-    value:
-      type: string(253)
-      notnull: true

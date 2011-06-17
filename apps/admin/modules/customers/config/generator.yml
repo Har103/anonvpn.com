@@ -21,7 +21,6 @@ generator:
         object_actions:
           delete: ~
       filter:  ~
-      form:
-        display: [email]
+      form:    ~
       edit:    ~
       new:     ~

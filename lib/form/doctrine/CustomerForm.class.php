@@ -16,5 +16,23 @@ class CustomerForm extends BaseCustomerForm
       $this->getValidator('email'),
       new sfValidatorEmail(array(), array('invalid' => 'Invalid email.'))
     )));
+
+    $this->configurePassword();
+
+    unset($this['created_at']);
+  }
+
+  protected function configurePassword()
+  {
+    $this->setWidget('password', new sfWidgetFormInputText(
+      array(),
+      array('value' => $this->getObject()->getPassword())
+    ));
+    $this->setValidator('password', new sfValidatorString(
+      array('required' => false),
+      array('max_length' => 64)
+    ));
+
+    return $this;
   }
 }

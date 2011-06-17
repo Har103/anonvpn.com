@@ -1,0 +1,6 @@
+<?php if(getenv('SYMFONY_DEV')): ?>
+Radcheck:
+  Radcheck_0:
+    Customer: Customer_0
+    value: cipich9A
+<?php endif; ?>

@@ -12,4 +12,5 @@ Customer:
       autoincrement: true
     email:
       type: string(64)
+      notnull: true
       unique: true

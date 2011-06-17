@@ -1,3 +1,12 @@
+server:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Server
+    module:               servers
+    prefix_path:          /servers
+    column:               id
+    with_wildcard_routes: true
+
 customer:
   class: sfDoctrineRouteCollection
   options:

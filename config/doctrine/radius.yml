@@ -1,0 +1,436 @@
+Radacct:
+  connection: doctrine
+  tableName: radacct
+  columns:
+    radacctid:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    acctsessionid:
+      type: string(64)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    acctuniqueid:
+      type: string(32)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    username:
+      type: string(64)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    groupname:
+      type: string(64)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    realm:
+      type: string(64)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: false
+      autoincrement: false
+    nasipaddress:
+      type: string(15)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    nasportid:
+      type: string(15)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    nasporttype:
+      type: string(32)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    acctstarttime:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    acctstoptime:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    acctsessiontime:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    acctauthentic:
+      type: string(32)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    connectinfo_start:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    connectinfo_stop:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    acctinputoctets:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    acctoutputoctets:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    calledstationid:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    callingstationid:
+      type: string(50)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    acctterminatecause:
+      type: string(32)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    servicetype:
+      type: string(32)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    framedprotocol:
+      type: string(32)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    framedipaddress:
+      type: string(15)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    acctstartdelay:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    acctstopdelay:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+    xascendsessionsvrkey:
+      type: string(10)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: false
+      autoincrement: false
+Radcheck:
+  connection: doctrine
+  tableName: radcheck
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    username:
+      type: string(64)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    attr:
+      type: string(64)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    op:
+      type: string(2)
+      fixed: true
+      unsigned: false
+      primary: false
+      default: '=='
+      notnull: true
+      autoincrement: false
+    value:
+      type: string(253)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+Radgroupcheck:
+  connection: doctrine
+  tableName: radgroupcheck
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    groupname:
+      type: string(64)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    attr:
+      type: string(64)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    op:
+      type: string(2)
+      fixed: true
+      unsigned: false
+      primary: false
+      default: '=='
+      notnull: true
+      autoincrement: false
+    value:
+      type: string(253)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+Radgroupreply:
+  connection: doctrine
+  tableName: radgroupreply
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    groupname:
+      type: string(64)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    attr:
+      type: string(64)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    op:
+      type: string(2)
+      fixed: true
+      unsigned: false
+      primary: false
+      default: '='
+      notnull: true
+      autoincrement: false
+    value:
+      type: string(253)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+Radpostauth:
+  connection: doctrine
+  tableName: radpostauth
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    username:
+      type: string(64)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    pass:
+      type: string(64)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    reply:
+      type: string(32)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    authdate:
+      type: timestamp(25)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+Radreply:
+  connection: doctrine
+  tableName: radreply
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    username:
+      type: string(64)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    attr:
+      type: string(64)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    op:
+      type: string(2)
+      fixed: true
+      unsigned: false
+      primary: false
+      default: '='
+      notnull: true
+      autoincrement: false
+    value:
+      type: string(253)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+Radusergroup:
+  connection: doctrine
+  tableName: radusergroup
+  columns:
+    id:
+      type: integer(8)
+      autoincrement: true
+      primary: true
+    username:
+      type: string(64)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    groupname:
+      type: string(64)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    priority:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '1'
+      notnull: true
+      autoincrement: false

@@ -5,8 +5,9 @@ Radcheck:
       unsigned: true
       primary: true
       autoincrement: true
-    email:
-      type: string(64)
+    customer_id:
+      type: integer(2)
+      unsigned: true
       notnull: true
     attr:
       type: string(64)
@@ -23,8 +24,8 @@ Radcheck:
   relations:
     Customer:
       class: Customer
-      local: email
-      foreign: email
+      local: customer_id
+      foreign: id
       foreignAlias: Radchecks
       onDelete: CASCADE
       onUpdate: CASCADE

@@ -13,7 +13,7 @@ customer:
     model:                Customer
     module:               customers
     prefix_path:          /customers
-    column:               email
+    column:               id
     with_wildcard_routes: true
 
 page:

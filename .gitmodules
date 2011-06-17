@@ -10,3 +10,6 @@
 [submodule "doc"]
 	path = doc
 	url = https://garygolden@github.com/garygolden/anonvpn-doc
+[submodule "plugins/ioMenuPlugin"]
+	path = plugins/ioMenuPlugin
+	url = https://garygolden@github.com/garygolden/ioMenuPlugin

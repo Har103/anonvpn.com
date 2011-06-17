@@ -1,5 +1,5 @@
 # radius uses this table
-User:
+Customer:
   columns:
     # TODO: subject of rename to "email"
     username:

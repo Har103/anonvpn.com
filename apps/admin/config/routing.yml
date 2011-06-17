@@ -1,3 +1,12 @@
+customer:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Customer
+    module:               customers
+    prefix_path:          /customers
+    column:               email
+    with_wildcard_routes: true
+
 page:
   class: sfDoctrineRouteCollection
   options:

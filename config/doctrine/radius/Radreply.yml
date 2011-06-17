@@ -1,0 +1,42 @@
+Radreply:
+  connection: doctrine
+  tableName: radreply
+  columns:
+    id:
+      type: integer(4)
+      fixed: false
+      unsigned: true
+      primary: true
+      autoincrement: true
+    username:
+      type: string(64)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    attr:
+      type: string(64)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    op:
+      type: string(2)
+      fixed: true
+      unsigned: false
+      primary: false
+      default: '='
+      notnull: true
+      autoincrement: false
+    value:
+      type: string(253)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false

@@ -1,0 +1,32 @@
+Radusergroup:
+  connection: doctrine
+  tableName: radusergroup
+  columns:
+    id:
+      type: integer(8)
+      autoincrement: true
+      primary: true
+    username:
+      type: string(64)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    groupname:
+      type: string(64)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: ''
+      notnull: true
+      autoincrement: false
+    priority:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: false
+      default: '1'
+      notnull: true
+      autoincrement: false

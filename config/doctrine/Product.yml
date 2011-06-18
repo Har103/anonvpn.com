@@ -1,4 +1,4 @@
-Rate:
+Product:
   columns:
     id:
       type: integer(1)

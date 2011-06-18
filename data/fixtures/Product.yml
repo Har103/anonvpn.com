@@ -14,11 +14,12 @@ foreach ($products as $product)
   // we're interested only in VPN products
   if (strpos($product->getIdVendor(), 'VPN') !== 0) continue;
 
-  echo ' Product_'  . $i                      . ':' . PHP_EOL;
-  echo '  sku: '    . $product->getIdVendor()       . PHP_EOL;
-  echo '  2co_id: ' . $product->getId()             . PHP_EOL;
-  echo '  title: "' . $product->getName()     . '"' . PHP_EOL;
-  echo '  price: '  . $product->getPrice()          . PHP_EOL;
+  echo ' Product_'           . $i                        . ':' . PHP_EOL;
+  echo '  sku: '             . $product->getIdVendor()         . PHP_EOL;
+  echo '  2co_system_id: '   . $product->getId()               . PHP_EOL;
+  echo '  2co_assigned_id: ' . $product->getIdAssigned()       . PHP_EOL;
+  echo '  title: "'          . $product->getName()       . '"' . PHP_EOL;
+  echo '  price: '           . $product->getPrice()            . PHP_EOL;
 
   $i++;
 }

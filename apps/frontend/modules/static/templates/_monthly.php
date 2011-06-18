@@ -5,7 +5,7 @@ $product = ProductTable::getInstance()->find('VPNMONTHLY');
 <div class="homepage-widget vpnmonthly">
   <h2>Monthly VPN service</h2>
   <div class="clr"></div>
-  <ul>
+  <ul class="green-tick">
     <li>Instant automagic activation</li>
     <li>Unlimited transfer</li>
     <li>Access to all VPN servers</li>
@@ -15,7 +15,7 @@ $product = ProductTable::getInstance()->find('VPNMONTHLY');
       echo link_to(
         'MPPE',
         'http://wikipedia.org/wiki/Microsoft_Point-to-Point_Encryption',
-        array('title' => 'Wikipedia article about MPPE', 'target' => '_blank'))
+        array('title' => 'Wikipedia article explaining MPPE', 'target' => '_blank'))
       ?>
       encryption
     </li>
@@ -25,8 +25,7 @@ $product = ProductTable::getInstance()->find('VPNMONTHLY');
     <li>7-day money back guarantee</li>
     */ ?>
   </ul>
-  <div class="price">$<?php echo (int)$product->getPrice()?></div>
-  <div class="button">
+  <div class="floatl">
   	<form action='https://www.2checkout.com/checkout/purchase' method='post'>
       <?php if ($sf_context->getConfiguration()->getEnvironment() === 'dev') : ?>
       <input type='hidden' name='demo' value='Y' />
@@ -38,7 +37,8 @@ $product = ProductTable::getInstance()->find('VPNMONTHLY');
       <input type='hidden' name='quantity' value='1' />
       <?php /* to remove the Continue Shopping button and lock the quantity fields. */ ?>
       <input type="hidden" name="fixed" value="Y" />
-      <input class="button" name='submit' type='submit' value='Purchase' />
-  	</form>
-	</div>
+      <input class="blue-gradient" name='submit' type='submit' value='Sign up' />
+    </form>
+  </div>
+  <div class="price">$<?php echo (int)$product->getPrice()?></div>
 </div>

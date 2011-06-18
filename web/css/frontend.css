@@ -28,6 +28,46 @@ a.rm, a.com { margin-left:8px; padding:9px 12px; background:url(/images/a_bg.gif
 
 .header, .content, .menu_nav, .fbg, .footer, form, ol, ol li, ul, .content .mainbar, .content .sidebar { margin:0; padding:0;}
 
+/* common */
+
+/* adds green ticks before list items */
+ul.green-tick { list-style-type: none; }
+ul.green-tick li { padding: 0 0 0 28px; background: url("/images/green_tick.gif") no-repeat left center; }
+
+/* adds gradient */
+input.blue-gradient, button.blue-gradient {
+    color: #fff;
+    margin-top: 5px;
+    background : #009ac7;
+    background: -moz-linear-gradient(
+        top,
+        #009ac7,
+        #00728C
+    );
+    background: -webkit-gradient(
+        linear, 0 0, 0 100%,
+        color-stop(0, #009ac7),
+        color-stop(1, #00728C)
+    );
+    cursor : pointer;
+    border : 0;
+    padding: 3px;
+}
+
+div.button input:hover, div.button button:hover {
+    background : #00728C;
+    background: -moz-linear-gradient(
+        top,
+        #00728C,
+        #009ac7
+    );
+    background: -webkit-gradient(
+        linear, 0 0, 0 100%,
+        color-stop(0, #00728C),
+        color-stop(1, #009ac7)
+    );
+}
+
 /* header */
 .header { }
 .header_resize { margin:0 auto; padding:3px 0 0 0; width:970px;}
@@ -54,7 +94,7 @@ a.rm, a.com { margin-left:8px; padding:9px 12px; background:url(/images/a_bg.gif
 .search form .button { float:left; margin:0; padding:4px 0 0 0; border:0; position:relative; }
 /* content */
 .content { padding: 0;}
-.content_resize { margin:0 auto; padding:20px 0 0 0; width:970px;}
+.content_resize { margin:0 auto; padding: 1em .5em; width:970px;}
 .content .mainbar img { float:left; padding:4px; margin:0 10px 0 0; border:1px solid #eaecec; background-color:#fff;}
 .content .mainbar .article { margin:0 0 20px 0;  padding:30px 20px;  width:610px;}
 .content .mainbar .article span.butons a { margin:0 5px 0 0; float:right; color:#9a9a9a; padding:1px 10px; text-decoration:none;  border:1px solid #ebe8e8; background:#fbfbfc;}
@@ -108,47 +148,15 @@ ol li .send { margin:16px 0 0 0;}
 .panel_dashboard { position: absolute; margin: 10px 0 0 10px; width: 250px; height: 157px; }
 
 /* homepage */
-div.homepage-widget { padding: 0 0 20px 20px; width:465px; }
-div.homepage-widget ul { margin: 0 0 0 3em; }
-div.homepage-widget div.price { float: left; font-size: 3.5em; padding: .8em 0 1em 0; width: 200px; color: #00820A; }
-div.homepage-widget div.button input.button { margin: 3em 0 0 5em; padding: .4em 1em; }
+div.homepage-widget { width:465px; }
+div.homepage-widget ul { margin: 1.2em 0 2em 2em; }
+
+/* vpnmonthly widget */
+div.vpnmonthly form { margin: 0 0 0 1em; }
+div.vpnmonthly form input[type="submit"] { padding: .5em 1em; }
+div.vpnmonthly div.price { font-size: 4em; font-weight: bold; margin: 0 0 0 4em; color: green; }
 
 /* extras widget */
 .extras table { width: 100%; }
 .extras .left { width: 40%; }
 .extras .right { font-weight: bold; }
-
-
-/* buttons */
-div.button input, div.button button {
-    color: #fff;
-    margin-top: 5px;
-    background : #009ac7;
-    background: -moz-linear-gradient(
-        top,
-        #009ac7,
-        #00728C
-    );
-    background: -webkit-gradient(
-        linear, 0 0, 0 100%,
-        color-stop(0, #009ac7),
-        color-stop(1, #00728C)
-    );
-    cursor : pointer;
-    border : 0;
-    padding: 3px;
-}
-
-div.button input:hover, div.button button:hover {
-    background : #00728C;
-    background: -moz-linear-gradient(
-        top,
-        #00728C,
-        #009ac7
-    );
-    background: -webkit-gradient(
-        linear, 0 0, 0 100%,
-        color-stop(0, #00728C),
-        color-stop(1, #009ac7)
-    );
-}

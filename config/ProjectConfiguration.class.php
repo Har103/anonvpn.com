@@ -5,8 +5,6 @@ sfCoreAutoload::register();
 
 class ProjectConfiguration extends sfProjectConfiguration
 {
-  protected $twocheckoutApi;
-
   public function setup()
   {
     self::enableZendFramework(sfConfig::get('sf_lib_dir') . DIRECTORY_SEPARATOR . 'vendor');
@@ -26,15 +24,16 @@ class ProjectConfiguration extends sfProjectConfiguration
     $manager->setCharset('utf8');
   }
 
-  public function getTwocheckoutApi()
+  public static function get2CoApi()
   {
-    if ($this->twocheckoutApi === null)
+    static $api;
+
+    if ($api === null)
     {
-      $credentials = sfConfig::get('app_2co_api');
-      $this->twocheckoutApi = new TwoCheckout_Api($credentials['username'], $credentials['password']);
+      $api = new TwoCheckout_Api('anonvpn.com', 'se5EezieC2');
     }
 
-    return $this->twocheckoutApi;
+    return $api;
   }
 
   /**

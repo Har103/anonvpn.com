@@ -1,0 +1,30 @@
+Order:
+  actAs:
+    Timestampable:
+      updated:
+        disabled: true
+  columns:
+    id:
+      type: integer(2)
+      unsigned: true
+      primary: true
+      autoincrement: true
+    sku:
+      type: string(16)
+      notnull: true
+    customer_id:
+      type: integer(2)
+      unsigned: true
+  relations:
+    Product:
+      local: sku
+      foreign: sku
+      foreignAlias: Orders
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    Customer:
+      local: customer_id
+      foreign: id
+      foreignAlias: Orders
+      onDelete: CASCADE
+      onUpdate: CASCADE

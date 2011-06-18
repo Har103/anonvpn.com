@@ -15,6 +15,7 @@ Order:
     customer_id:
       type: integer(2)
       unsigned: true
+      notnull: true
   relations:
     Product:
       local: sku

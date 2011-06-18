@@ -1,10 +1,15 @@
 Product:
   columns:
-    id:
-      type: integer(1)
-      unsigned: true
+    sku:
+      type: varchar(16)
+      notnull: true
       primary: true
-      comment: "This id MUST be in sync with product_id within 2co system"
+      comment: "Must be started from VPN"
+    2co_id:
+      type: integer(5)
+      unsigned: true
+      unique: true
+      comment: "This id MUST be in sync with system product_id within 2co system"
     title:
       type: string(100)
       notnull: true
@@ -13,8 +18,3 @@ Product:
       scale: 2
       unsigned: true
       notnull: true
-    transfer:
-      type: integer(3)
-      unsigned: true
-      notnull: true
-      comment: "Allowed montly transfer in megabytes (0 for unlimited)"

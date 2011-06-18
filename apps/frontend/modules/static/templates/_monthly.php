@@ -11,7 +11,7 @@
 		<li>Technical support</li>
 		<li>7-day money back guarantee</li>
 	</ul>
-	<div class="price">only $3</div>
+	<div class="price">$5</div>
 	<div class="button">
   	<form action='https://www.2checkout.com/checkout/purchase' method='post'>
       <input type='hidden' name='sid' value='1507059' />

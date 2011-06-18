@@ -1,14 +1,17 @@
+<?php
+// just one extra for now
+$extras[] = ProductTable::getInstance()->find('VPNIP');
+?>
+
 <div class="homepage-widget extras">
-  <h2>Extras</h2>
+  <h2>Extra goodies</h2>
   <div class="clr"></div>
 	<table>
+  <?php foreach($extras as $product) : ?>
 		<tr>
-			<td class="left">1Gb of transfer</td>
-			<td class="right">$X</td>
+			<td class="left"><?php echo $product->getTitle()?></td>
+			<td class="right">$<?php echo (int)$product->getPrice()?></td>
 		</tr>
-		<tr>
-			<td class="left">50Gb of transfer</td>
-			<td class="right">$XX</td>
-		</tr>
+  <?php endforeach;?>
 	</table>
 </div>

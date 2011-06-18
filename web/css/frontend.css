@@ -53,7 +53,7 @@ a.rm, a.com { margin-left:8px; padding:9px 12px; background:url(/images/a_bg.gif
 .search form .keywords { width:220px; line-height:13px; height:13px; float:left; background:none; border:0; padding:8px 0px; margin:0; font:normal 11px Arial, Helvetica, sans-serif; color:#767676; }
 .search form .button { float:left; margin:0; padding:4px 0 0 0; border:0; position:relative; }
 /* content */
-.content { padding:10px 0 0 0;}
+.content { padding: 0;}
 .content_resize { margin:0 auto; padding:20px 0 0 0; width:970px;}
 .content .mainbar img { float:left; padding:4px; margin:0 10px 0 0; border:1px solid #eaecec; background-color:#fff;}
 .content .mainbar .article { margin:0 0 20px 0;  padding:30px 20px;  width:610px;}

@@ -28,3 +28,6 @@ Order:
       foreignAlias: Orders
       onDelete: CASCADE
       onUpdate: CASCADE
+  indexes:
+    created_at:
+      fields: [created_at]

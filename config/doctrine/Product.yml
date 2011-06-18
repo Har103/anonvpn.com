@@ -8,6 +8,7 @@ Product:
     2co_id:
       type: integer(5)
       unsigned: true
+      notnull: true
       unique: true
       comment: "This id MUST be in sync with system product_id within 2co system"
     title:

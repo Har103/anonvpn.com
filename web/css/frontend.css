@@ -111,6 +111,9 @@ ul.sb_menu li a:hover, ul.ex_menu li a:hover { color:#78bbe6; text-decoration:un
 ul.sb_menu li a:hover { text-decoration:underline;}
 ul.ex_menu li a:hover { text-decoration:none;}
 
+.content .checkout-approved table { width: 50%; }
+.content .checkout-approved table td.left { font-weight: bold; }
+
 /* subpages */
 .content .mainbar .comment { margin:0; padding:16px 0 0 0;}
 .content .mainbar .comment img.userpic { border:1px solid #dedede; margin:10px 16px 0 0; padding:0; float:left;}

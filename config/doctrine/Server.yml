@@ -8,7 +8,7 @@ Server:
       autoincrement: true
       comment: "id is required for radius :("
     hostname:
-      type: string(50)
+      type: varchar(64)
       notnull: true
       unique: true
     secret:
@@ -18,6 +18,16 @@ Server:
     country:
       type: char(2)
       comment: "Country alpha-2 ISO code"
+    city:
+      type: varchar(32)
+    datacenter:
+      type: varchar(64)
+    is_public:
+      type: boolean
+      default: true
+    is_active:
+      type: boolean
+      default: true
   indexes:
     country:
       fields: [country]

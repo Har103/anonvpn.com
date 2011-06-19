@@ -5,10 +5,11 @@ Order:
         disabled: true
   columns:
     id:
-      type: integer(2)
+      type: integer(5)
       unsigned: true
+      notnull: true
       primary: true
-      autoincrement: true
+      comment: "2CO order ID"
     sku:
       type: string(16)
       notnull: true

@@ -1,0 +1,7 @@
+Radgroupcheck:
+  Radgroupcheck_0:
+    Group: members
+    attr: Pool-Name
+    op: :=
+    value: default
+    

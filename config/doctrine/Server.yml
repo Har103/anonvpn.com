@@ -6,7 +6,6 @@ Server:
       unsigned: true
       primary: true
       autoincrement: true
-      comment: "Required for radius"
     hostname:
       type: varchar(64)
       notnull: true

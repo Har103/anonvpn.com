@@ -22,9 +22,6 @@ Server:
       type: varchar(32)
     datacenter:
       type: varchar(64)
-    is_public:
-      type: boolean
-      default: true
     is_active:
       type: boolean
       default: true

@@ -1,4 +1,4 @@
-Radip:
+Ip:
   columns:
     id:
       type: integer(2)
@@ -25,12 +25,12 @@ Radip:
     Server:
       local: server_id
       foreign: id
-      foreignAlias: Radips
+      foreignAlias: Ips
       onDelete: CASCADE
       onUpdate: CASCADE
     Customer:
       local: customer_id
       foreign: id
-      foreignAlias: Radips
+      foreignAlias: Ips
       onDelete: SET NULL
       onUpdate: CASCADE

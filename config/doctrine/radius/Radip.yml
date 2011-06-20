@@ -1,0 +1,36 @@
+Radip:
+  columns:
+    id:
+      type: integer(2)
+      unsigned: true
+      primary: true
+      autoincrement: true
+    pool_name:
+      type: string(32)
+      notnull: true
+      default: 'default'
+    ip:
+      type: string(15)
+      notnull: true
+    server_id:
+      type: integer(2)
+      unsigned: true
+      notnull: true
+    customer_id:
+      type: integer(2)
+      unsigned: true
+    expires_at:
+      type: timestamp
+  relations:
+    Server:
+      local: server_id
+      foreign: id
+      foreignAlias: Radips
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    Customer:
+      local: customer_id
+      foreign: id
+      foreignAlias: Radips
+      onDelete: SET NULL
+      onUpdate: CASCADE

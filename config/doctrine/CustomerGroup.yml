@@ -1,0 +1,22 @@
+CustomerGroup:
+  columns:
+    customer_id:
+      type: integer(2)
+      unsigned: true
+      notnull: true
+      primary: true
+    group_name:
+      type: varchar(16)
+      notnull: true
+      primary: true
+  relations:
+    Customer:
+      local: customer_id
+      foreign: id
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    Group:
+      local: group_name
+      foreign: name
+      onDelete: CASCADE
+      onUpdate: CASCADE

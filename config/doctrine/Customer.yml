@@ -14,3 +14,10 @@ Customer:
       type: string(64)
       notnull: true
       unique: true
+  relations:
+    Groups:
+      class: Group
+      local: customer_id
+      foreign: group_name
+      foreignAlias: Customers
+      refClass: CustomerGroup

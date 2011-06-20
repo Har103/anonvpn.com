@@ -1,0 +1,13 @@
+Group:
+  columns:
+    name:
+      type: varchar(16)
+      notnull: true
+      primary: true
+  relations:
+    Customers:
+      class: Customer
+      local: group_name
+      foreign: customer_id
+      foreignAlias: Groups
+      refClass: CustomerGroup

@@ -1,42 +1,28 @@
 Radgroupcheck:
-  connection: doctrine
-  tableName: radgroupcheck
   columns:
     id:
-      type: integer(4)
-      fixed: false
+      type: integer(2)
       unsigned: true
       primary: true
       autoincrement: true
-    groupname:
-      type: string(64)
-      fixed: false
-      unsigned: false
-      primary: false
-      default: ''
+    group_name:
+      type: string(16)
       notnull: true
-      autoincrement: false
     attr:
       type: string(64)
-      fixed: false
-      unsigned: false
-      primary: false
-      default: ''
       notnull: true
-      autoincrement: false
     op:
-      type: string(2)
-      fixed: true
-      unsigned: false
-      primary: false
-      default: '=='
+      type: enum
+      values: [':=', '==', '+=', '!=', '>', '>=', '<', '<=', '=~', '!~', '=*', '!*']
+      default: ':='
       notnull: true
-      autoincrement: false
     value:
       type: string(253)
-      fixed: false
-      unsigned: false
-      primary: false
-      default: ''
       notnull: true
-      autoincrement: false
+  relations:
+    Group:
+      local: group_name
+      foreign: name
+      foreignAlias: Radgroupchecks
+      onDelete: CASCADE
+      onUpdate: CASCADE

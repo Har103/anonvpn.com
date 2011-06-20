@@ -15,7 +15,7 @@ Server:
       type: varchar(15)
       notnull: true
       unique: true
-      comment: "Required to reference radip"
+      comment: "Required for radius. Must be unique to correctly allocate IPs."
     secret:
       type: char(16)
       notnull: true

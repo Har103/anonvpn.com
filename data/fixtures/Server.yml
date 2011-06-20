@@ -1,9 +1,5 @@
 Server:
   Server_0:
-    hostname: dev.vpn.anonvpn.com
-    secret: Yei2oigachahzai5
-    is_public: false
-  Server_1:
     hostname: us.vpn.anonvpn.com
     secret: ej6Di5eengecheeh
     country: US

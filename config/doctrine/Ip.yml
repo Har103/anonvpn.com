@@ -12,6 +12,7 @@ Ip:
     ip:
       type: string(15)
       notnull: true
+      unique: true
     server_id:
       type: integer(2)
       unsigned: true

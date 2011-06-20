@@ -11,6 +11,11 @@ Server:
       type: varchar(64)
       notnull: true
       unique: true
+    ip:
+      type: varchar(15)
+      notnull: true
+      unique: true
+      comment: "Required to reference radip"
     secret:
       type: char(16)
       notnull: true

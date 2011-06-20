@@ -21,6 +21,9 @@ Ip:
       unsigned: true
     expires_at:
       type: timestamp
+  indexes:
+    expires_at:
+      fields: [ expires_at ]
   relations:
     Server:
       local: server_id

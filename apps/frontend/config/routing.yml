@@ -1,3 +1,7 @@
+servers:
+  url: /servers
+  param: { module: servers, action: index }
+
 help:
   url: /help
   param: { module: help, action: index }

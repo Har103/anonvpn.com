@@ -1,7 +1,16 @@
 <?php if(getenv('SYMFONY_DEV')): ?>
 Customer:
-  Customer_0:
-    email: mail@garygolden.me
-    password: cipich9A
-    Groups: [ members ]
+ Customer_0:
+  email: mail@garygolden.me
+  password: cipich9A
+  Groups: [ members ]
+<?php
+for ($i = 1; $i < 20; $i++)
+{
+  printf(' Customer_%u:'                     . PHP_EOL, $i);
+  printf('  email: testuser%u@garygolden.me' . PHP_EOL, $i);
+  printf('  password: %s'                    . PHP_EOL, trim(`pwgen -1`));
+  echo   '  Groups: [ members ]'             . PHP_EOL;
+}
+?>
 <?php endif; ?>

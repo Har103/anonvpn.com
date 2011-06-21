@@ -1,9 +1,9 @@
 servers:
-  url: /servers
+  url: /vpn-servers-list.html
   param: { module: servers, action: index }
 
 help:
-  url: /help
+  url: /help.html
   param: { module: help, action: index }
 
 checkout_approved:

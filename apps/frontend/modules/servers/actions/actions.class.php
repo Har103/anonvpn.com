@@ -17,6 +17,6 @@ class serversActions extends sfActions
   */
   public function executeIndex(sfWebRequest $request)
   {
-    $this->forward('default', 'module');
+    $this->servers = Doctrine::getTable('Server')->findAll();
   }
 }

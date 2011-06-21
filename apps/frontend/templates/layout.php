@@ -7,6 +7,7 @@
   <link rel="shortcut icon" href="/favicon.ico" />
   <?php include_stylesheets() ?>
   <?php include_javascripts() ?>
+  <?php include_partial('global/ga')?>
 </head>
 <body>
   <div class="main">

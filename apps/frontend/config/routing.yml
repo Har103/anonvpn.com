@@ -4,7 +4,7 @@ help:
 
 checkout_approved:
   url: /checkout/approved
-  param: { module: checkout, action approved }
+  param: { module: checkout, action: approved }
 
 homepage:
   url:   /

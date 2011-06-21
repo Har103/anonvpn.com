@@ -17,5 +17,6 @@ class helpActions extends sfActions
   */
   public function executeIndex(sfWebRequest $request)
   {
+    $this->getResponse()->setTitle('Help - anonVPN');
   }
 }

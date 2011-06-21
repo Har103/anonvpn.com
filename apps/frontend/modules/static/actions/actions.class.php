@@ -17,5 +17,6 @@ class staticActions extends sfActions
   */
   public function executeHome(sfWebRequest $request)
   {
+    $this->getResponse()->setTitle('anonVPN - Anonymous Internet Service Provider');
   }
 }

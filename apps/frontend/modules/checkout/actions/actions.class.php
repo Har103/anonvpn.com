@@ -18,6 +18,8 @@ class checkoutActions extends sfActions
    */
   public function executeApproved(sfWebRequest $request)
   {
+    $this->getResponse()->setTitle('Checkout approved. Welcome to anonVPN.');
+
     $this->errors = array();
 
     // validate MD5

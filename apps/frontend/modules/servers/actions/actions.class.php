@@ -17,6 +17,8 @@ class serversActions extends sfActions
   */
   public function executeIndex(sfWebRequest $request)
   {
+    $this->getResponse()->setTitle('Servers list - anonVPN');
+
     $this->servers = Doctrine::getTable('Server')->findAll();
   }
 }

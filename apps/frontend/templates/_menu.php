@@ -1,6 +1,7 @@
 <?php
 $menu = new ioMenu(array('class' => null));
 $menu->addChild('Home', '@homepage');
+$menu->addChild('Help', '@help');
 
 // wrap all items with <span> (required by css)
 foreach ($menu as $item)

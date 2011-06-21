@@ -1,3 +1,7 @@
+help:
+  url: /help
+  param: { module: help, action: index }
+
 checkout_approved:
   url: /checkout/approved
   param: { module: checkout, action approved }

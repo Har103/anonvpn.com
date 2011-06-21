@@ -13,7 +13,7 @@
     <div class="header">
       <div class="header_resize">
         <?php include_partial('global/logo')?>
-        <?php include_partial('global/upperMenu')?>
+        <?php include_partial('global/menu')?>
         <div class="clr"></div>
         <div class="header_img">
           <?php echo image_tag('main_img.png', array('alt' => 'Dashboard display', 'width' => '271', 'height' => '234'))?>

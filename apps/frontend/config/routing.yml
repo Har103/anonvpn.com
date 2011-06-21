@@ -8,4 +8,4 @@ checkout_approved:
 
 homepage:
   url:   /
-  param: { module: static, action: index }
+  param: { module: static, action: home }

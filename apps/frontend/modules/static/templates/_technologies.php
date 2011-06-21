@@ -1,11 +1,6 @@
 <h2><span>Technologies</span></h2>
 <p>
-We use standard Windows PPtP VPN. It means that you do not need to install additional software.<br />
-Linux and MacOS support it as well.
+We use standard Windows PPtP VPN, you do not need to install additional software.<br />
+Linux and MacOS is supported as well.
 </p>
-<p>
-Communication is encrypted with 256bit key RSA algorithm and gzipped.
-</p>
-<p style="color: red;">
-Put correct numbers here
-</p>
+<p>Communication is encrypted with 128bit MPPE encryption.</p>

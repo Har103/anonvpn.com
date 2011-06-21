@@ -2,16 +2,6 @@ checkout_approved:
   url: /checkout/approved
   param: { module: checkout, action approved }
 
-# default rules
 homepage:
   url:   /
   param: { module: static, action: index }
-
-# generic rules
-# please, remove them by adding more specific rules
-default_index:
-  url:   /:module
-  param: { action: index }
-
-default:
-  url:   /:module/:action/*

@@ -12,9 +12,10 @@ class ProjectConfiguration extends sfProjectConfiguration
       throw new RuntimeException('Unable to set locale en_US.UTF-8');
     }
 
-    self::enableZendFramework(sfConfig::get('sf_lib_dir') . DIRECTORY_SEPARATOR . 'vendor');
+    self::enableZendFramework();
 
     // enable TwoCheckout autoloading
+    set_include_path(get_include_path() . PATH_SEPARATOR . sfConfig::get('sf_lib_dir') . DIRECTORY_SEPARATOR . 'vendor');
     self::enableZendFramework()->registerNamespace('TwoCheckout_');
 
     $this->enablePlugins('sfDoctrinePlugin');

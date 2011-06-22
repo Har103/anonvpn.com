@@ -9,7 +9,12 @@
 .bzr
 _darcs
 .git
+.gitignore
+.gitmodules
 .hg
 .monotone
 .svn
 CVS
+
+# Docs
+doc/*

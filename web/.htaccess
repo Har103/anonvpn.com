@@ -24,3 +24,9 @@ Options +FollowSymLinks +ExecCGI
   # no, so we redirect to our front web controller
   RewriteRule ^(.*)$ index.php [QSA,L]
 </IfModule>
+
+# Define memory bondaries.
+# This will admonish the coder of allocating too much memory.
+<IfModule mod_php5.c>
+  php_value memory_limit 32M
+</IfModule>

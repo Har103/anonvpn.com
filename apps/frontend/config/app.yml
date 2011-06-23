@@ -1,5 +1,15 @@
-# You can find more information about this file on the symfony website:
-# http://www.symfony-project.org/reference/1_4/en/11-App
-
-# default values
-#all:
+all:
+  sfSimpleGoogleSitemap:
+    urls:
+      homepage:
+        url:      http://www.anonvpn.com/
+        freq:     daily
+        priority: 1.0
+      servers:
+        url:      http://www.anonvpn.com/vpn-servers-list.html
+        freq:     daily
+        priority: 1.0
+      help:
+        url:      http://www.anonvpn.com/help.html
+        freq:     daily
+        priority: 1.0

@@ -8,3 +8,9 @@ all:
       attributes:
         use_native_enum: true
         quote_identifier: true
+
+prod:
+  doctrine:
+    param:
+      username: anonvpncom
+      password: RrLB2C6SxFPww5TT

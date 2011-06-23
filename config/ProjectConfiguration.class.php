@@ -22,6 +22,7 @@ class ProjectConfiguration extends sfProjectConfiguration
     $this->enablePlugins('sfTaskExtraPlugin');
     $this->enablePlugins('ggTestSuitePlugin');
     $this->enablePlugins('ioMenuPlugin');
+    $this->enablePlugins('sfSimpleGoogleSitemapPlugin');
   }
 
   public function configureDoctrine(Doctrine_Manager $manager)

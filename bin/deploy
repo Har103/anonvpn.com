@@ -4,7 +4,7 @@
 # Takes care about permissions and stuff.
 # Uses ssh for transfer, pay attention to ~/.ssh/config
 
-SSH_HOST="www.anonvpn.com"
+SSH_HOST="head.anonvpn.com"
 SSH_PATH="/var/www/www.anonvpn.com/"
 
 cd `dirname $(readlink -f $0)` && cd ..

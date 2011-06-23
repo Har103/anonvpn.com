@@ -1,0 +1,20 @@
+#!/bin/sh
+#
+# Trasnfer website to production server.
+# Takes care about permissions and stuff.
+# Uses ssh for transfer, pay attention to ~/.ssh/config
+
+SSH_HOST="www.anonvpn.com"
+SSH_PATH="/var/www/www.anonvpn.com/"
+
+cd `dirname $(readlink -f $0)` && cd ..
+
+if [ -n "$1" ]; then
+  chgrp -R www-data . 2>/dev/null
+  find -type d -exec chmod 2750 {} \; 2>/dev/null
+  find -type f -exec chmod 640 {} \; 2>/dev/null
+  php symfony project:permissions
+else
+  rsync -rltEzCv --delete --progress --exclude-from=config/rsync_exclude.txt ./ ${SSH_HOST}:$SSH_PATH
+  ssh $SSH_HOST ${SSH_PATH}bin/$(basename $0) $SSH_HOST
+fi

@@ -17,4 +17,7 @@ _darcs
 CVS
 
 # Docs
-doc/*
+/doc/*
+
+# local file for xdebug
+/symfony.php

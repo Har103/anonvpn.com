@@ -1,0 +1,10 @@
+Hoster:
+  columns:
+    id:
+      type: integer(2)
+      unsigned: true
+      autoincrement: true
+      primary: true
+    url:
+      type: string(32)
+      notnull: true

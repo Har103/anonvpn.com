@@ -30,3 +30,13 @@ Options +FollowSymLinks +ExecCGI
 <IfModule mod_php5.c>
   php_value memory_limit 32M
 </IfModule>
+
+# Protect admin area
+<Files admin.php>
+  AuthType digest
+  AuthName admin
+  AuthDigestDomain /admin.php
+  AuthDigestProvider file
+  AuthUserFile /var/www/www.anonvpn.com/web/.htdigest
+  Require valid-user
+</Files>

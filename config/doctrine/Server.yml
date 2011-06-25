@@ -5,6 +5,10 @@ Server:
       type: integer(1)
       unsigned: true
       primary: true
+    hoster_id:
+      type: integer(2)
+      unsigned: true
+      notnull: true
     hostname:
       type: varchar(64)
       notnull: true
@@ -25,9 +29,54 @@ Server:
       type: varchar(32)
     datacenter:
       type: varchar(64)
+    ram:
+      type: integer(2)
+      unsigned: true
+      notnull: true
+      default: 128
+      comment: "in megabytes"
+    storage:
+      type: integer(2)
+      unsigned: true
+      comment: "in gigabytes; NULL for unlimited"
+    transfer:
+      type: integer(2)
+      unsigned: true
+      comment: "in gigabytes; NULL for unlimited"
+    speed:
+      type: integer(2)
+      unsigned: true
+      comment: "in mbps; NULL for unlimited/unknown"
+    ips:
+      type: integer(1)
+      unsigned: true
+      notnull: true
+      default: 1
+      comment: "number of ipv4 addresses"
+    price:
+      type: float(3,2)
+      unsigned: true
+      notnull: true
+    virtualization:
+      type: enum
+      values: [ "openvz", "xen", "kvm", "dedicated" ]
+      default: "openvz"
+      notnull: true
+    arch:
+      type: enum
+      values: [ 32, 64 ]
+      default: 64
+      notnull: true
     is_active:
       type: boolean
       default: true
+  relations:
+    Hoster:
+      local: hoster_id
+      foreign: id
+      foreignAlias: Servers
+      onDelete: CASCADE
+      onUpdate: CASCADE
   indexes:
     country:
       fields: [country]

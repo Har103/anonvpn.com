@@ -14,9 +14,9 @@ Ip:
       unsigned: true
       notnull: true
     ip:
-      type: string(15)
+      type: integer(1)
+      unsigned: true
       notnull: true
-      unique: true
     customer_id:
       type: integer(2)
       unsigned: true

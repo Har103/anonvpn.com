@@ -43,13 +43,31 @@ class Server extends BaseServer
     $this->setId($this->findFreeId());
   }
 
+  /**
+   * Create ip pool for the server.
+	 *
+   * @see Doctrine_Record::postInsert()
+   */
+  public function postInsert($event)
+  {
+    for ($i = 100; $i < 200; $i++)
+    {
+      $ip = new Ip();
+      $ip->setSubnet($this->getId());
+      $ip->setIp($i);
+      $ip->save();
+    }
+  }
+
   public function findFreeId()
   {
     $ids =
     $this->getTable()->createQuery()
       ->select('id')
-      ->setHydrationMode(Doctrine::HYDRATE_SINGLE_SCALAR)
+      ->setHydrationMode(Doctrine::HYDRATE_ARRAY)
       ->execute();
+
+    $ids = array_map('current', $ids);
 
     return min(array_diff(range(1, 255), $ids));
   }

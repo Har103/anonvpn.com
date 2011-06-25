@@ -9,14 +9,14 @@ Ip:
       type: string(32)
       notnull: true
       default: 'default'
+    subnet:
+      type: integer(1)
+      unsigned: true
+      notnull: true
     ip:
       type: string(15)
       notnull: true
       unique: true
-    server_id:
-      type: integer(2)
-      unsigned: true
-      notnull: true
     customer_id:
       type: integer(2)
       unsigned: true
@@ -27,7 +27,7 @@ Ip:
       fields: [ expires_at ]
   relations:
     Server:
-      local: server_id
+      local: subnet
       foreign: id
       foreignAlias: Ips
       onDelete: CASCADE

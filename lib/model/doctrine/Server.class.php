@@ -31,4 +31,26 @@ class Server extends BaseServer
   {
     throw new RuntimeException('Cannot directly set ip address. Set hostname instead.');
   }
+
+  /**
+   * Before insert we will find a first available id from range 1..255
+   * The requirement is to keep ids sequence without holes.
+   *
+   * See this thread:	http://forums.mysql.com/read.php?10,424597
+   */
+  public function preInsert($event)
+  {
+    $this->setId($this->findFreeId());
+  }
+
+  public function findFreeId()
+  {
+    $ids =
+    $this->getTable()->createQuery()
+      ->select('id')
+      ->setHydrationMode(Doctrine::HYDRATE_SINGLE_SCALAR)
+      ->execute();
+
+    return min(array_diff(range(1, 255), $ids));
+  }
 }

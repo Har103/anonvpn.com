@@ -2,10 +2,9 @@
 Server:
   columns:
     id:
-      type: integer(2)
+      type: integer(1)
       unsigned: true
       primary: true
-      autoincrement: true
     hostname:
       type: varchar(64)
       notnull: true

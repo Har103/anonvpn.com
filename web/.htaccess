@@ -40,3 +40,12 @@ Options +FollowSymLinks +ExecCGI
   AuthUserFile /var/www/www.anonvpn.com/web/.htdigest
   Require valid-user
 </Files>
+
+<IfModule mod_expires.c>
+  ExpiresActive on
+    
+  ExpiresByType image/gif   "access plus 1 hour"
+  ExpiresByType image/jpeg  "access plus 1 hour"
+  ExpiresByType image/png   "access plus 1 hour"
+  ExpiresByType image/x-ico "access plus 1 hour"
+</IfModule>

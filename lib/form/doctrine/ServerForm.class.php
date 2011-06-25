@@ -12,5 +12,6 @@ class ServerForm extends BaseServerForm
 {
   public function configure()
   {
+    unset($this['ip']);
   }
 }

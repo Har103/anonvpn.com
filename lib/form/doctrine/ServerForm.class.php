@@ -12,6 +12,13 @@ class ServerForm extends BaseServerForm
 {
   public function configure()
   {
+    $this->configureSecret();
+
     unset($this['ip']);
+  }
+
+  protected function configureSecret()
+  {
+    $this->getWidget('secret')->setDefault(trim(`pwgen -1s 16`));
   }
 }

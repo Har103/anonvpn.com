@@ -13,7 +13,9 @@ generator:
 
     config:
       actions: ~
-      fields:  ~
+      fields:
+        id:
+          help: 2CO order id. Id numbers less than 65536 are reserved for internal use.
       list:    ~
       filter:  ~
       form:    ~

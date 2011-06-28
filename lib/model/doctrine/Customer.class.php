@@ -12,6 +12,11 @@
  */
 class Customer extends BaseCustomer
 {
+  public function __toString()
+  {
+    return $this->getEmail();
+  }
+
   public function setPassword($password)
   {
     // do not save empty strings!

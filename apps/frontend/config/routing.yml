@@ -6,6 +6,10 @@ help:
   url: /help.html
   param: { module: help, action: index }
 
+checkout_unlimited:
+  url: /buy-unlimited-vpn.html
+  param: { module: checkout, action: unlimited }
+
 checkout_approved:
   url: /checkout/approved
   param: { module: checkout, action: approved }

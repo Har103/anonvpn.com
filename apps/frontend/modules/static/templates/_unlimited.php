@@ -16,6 +16,6 @@ if (!$product) return;
   <div class="footnote">* shared. We do not oversell.</div>
   <div class="offer-tag">
   	<span class="price">$<?php echo (int)$product->getPrice()?></span>
-    <span class="sign-up"><a title="Proceed to checkout" href="<?php echo url_for('@checkout_unlimited')?>">Sign up</a></span>
+    <span class="sign-up"><a title="Checkout unlimited VPN" href="<?php echo url_for('@checkout_unlimited')?>">Sign up</a></span>
   </div>
 </div>

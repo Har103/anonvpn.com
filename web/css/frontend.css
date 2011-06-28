@@ -97,7 +97,7 @@ div.button input:hover, div.button button:hover {
 .search form .button { float:left; margin:0; padding:4px 0 0 0; border:0; position:relative; }
 /* content */
 .content { padding: 0;}
-.content_resize { margin:0 auto; padding: 0 .5em 1em 0; width:970px;}
+.content_resize { margin:0 auto; padding: 0 .5em 1em 0; width:1000px;}
 .content .mainbar img { float:left; padding:4px; margin:0 10px 0 0; border:1px solid #eaecec; background-color:#fff;}
 .content .mainbar .article { margin:0 0 20px 0;  padding:30px 20px;  width:610px;}
 .content .mainbar .article span.butons a { margin:0 5px 0 0; float:right; color:#9a9a9a; padding:1px 10px; text-decoration:none;  border:1px solid #ebe8e8; background:#fbfbfc;}
@@ -154,10 +154,10 @@ ol li .send { margin:16px 0 0 0;}
 .panel_dashboard { position: absolute; margin: 10px 0 0 10px; width: 250px; height: 157px; }
 
 /* homepage */
-.homepage-widget { width:465px; }
+.homepage-widget { float: left; width:333px; }
 .homepage-widget ul { margin: .5em 0 .5em 1em; }
 .homepage-widget .offer-tag { margin: 2em 0; }
-.homepage-widget .offer-tag .price { font-size: 3.5em; font-weight: bold; color: green; margin: 0 1.5em 0 0; }
+.homepage-widget .offer-tag .price { font-size: 3.5em; font-weight: bold; color: green; margin: 0 1em 0 0; }
 .homepage-widget .offer-tag .sign-up { font-size: 2.5em; }
 
 /* extras widget */

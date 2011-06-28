@@ -69,6 +69,8 @@ div.button input:hover, div.button button:hover {
     );
 }
 
+.footnote { font-style: italic; font-size: .8em; }
+
 /* header */
 .header { }
 .header_resize { margin:0 auto; padding:3px 0 0 0; width:970px;}
@@ -152,13 +154,11 @@ ol li .send { margin:16px 0 0 0;}
 .panel_dashboard { position: absolute; margin: 10px 0 0 10px; width: 250px; height: 157px; }
 
 /* homepage */
-div.homepage-widget { width:465px; }
-div.homepage-widget ul { margin: 1.2em 0 2em 2em; }
-
-/* vpnmonthly widget */
-div.vpnmonthly form { margin: 0 0 0 1em; }
-div.vpnmonthly form input[type="submit"] { padding: .5em 1em; }
-div.vpnmonthly div.price { font-size: 4em; font-weight: bold; margin: 0 0 0 4em; color: green; }
+.homepage-widget { width:465px; }
+.homepage-widget ul { margin: .5em 0 .5em 1em; }
+.homepage-widget .offer-tag { margin: 2em 0; }
+.homepage-widget .offer-tag .price { font-size: 3.5em; font-weight: bold; color: green; margin: 0 1.5em 0 0; }
+.homepage-widget .offer-tag .sign-up { font-size: 2.5em; }
 
 /* extras widget */
 .extras table { width: 100%; }

@@ -12,7 +12,12 @@ class checkoutActions extends sfActions
 {
   public function executeUnlimited(sfWebRequest $request)
   {
-
+    $this->servers = Doctrine::getTable('Server')->find('unlimited');
+    if (!count($this->servers))
+    {
+      $this->getResponse()->setTitle('Out of stock - anonVPN');
+      return sfView::ERROR;
+    }
   }
 
   public function executeMetered(sfWebRequest $request)

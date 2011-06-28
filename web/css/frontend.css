@@ -25,6 +25,7 @@ p.spec { text-align:right;}
 a { color:#78bbe6; text-decoration:none;}
 a:hover { text-decoration:underline;}
 a.rm, a.com { margin-left:8px; padding:9px 12px; background:url(/images/a_bg.gif) repeat-x top; text-decoration:none; color:#fff;}
+img { border-width: 0; }
 
 .header, .content, .menu_nav, .fbg, .footer, form, ol, ol li, ul, .content .mainbar, .content .sidebar { margin:0; padding:0;}
 

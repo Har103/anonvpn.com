@@ -67,6 +67,14 @@ Server:
       values: [ 32, 64 ]
       default: 64
       notnull: true
+    pptp:
+      type: boolean
+      notnull: true
+      default: false
+    openvpn:
+      type: boolean
+      notnull: true
+      default: false
     is_active:
       type: boolean
       default: true

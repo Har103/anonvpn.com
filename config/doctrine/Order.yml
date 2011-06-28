@@ -17,6 +17,10 @@ Order:
       type: integer(2)
       unsigned: true
       notnull: true
+    server_id:
+      type: integer(1)
+      unsigned: true
+      comment: "Associated server"
   relations:
     Product:
       local: sku
@@ -26,6 +30,12 @@ Order:
       onUpdate: CASCADE
     Customer:
       local: customer_id
+      foreign: id
+      foreignAlias: Orders
+      onDelete: CASCADE
+      onUpdate: CASCADE
+    Server:
+      local: server_id
       foreign: id
       foreignAlias: Orders
       onDelete: CASCADE

@@ -15,6 +15,11 @@ class checkoutActions extends sfActions
 
   }
 
+  public function executeMetered(sfWebRequest $request)
+  {
+
+  }
+
   /**
    * 2checkout.com returns customer to this url
    * after successful checkout.

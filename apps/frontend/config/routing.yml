@@ -18,6 +18,10 @@ checkout_unlimited:
   url: /buy-unlimited-vpn.html
   param: { module: checkout, action: unlimited }
 
+checkout_metered:
+  url: /buy-fast-vpn.html
+  param: { module: checkout, action: metered }
+
 checkout_approved:
   url: /checkout/approved
   param: { module: checkout, action: approved }

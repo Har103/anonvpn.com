@@ -54,7 +54,7 @@ Server:
       default: 1
       comment: "number of ipv4 addresses"
     price:
-      type: float(3,2)
+      type: float(5)
       unsigned: true
       notnull: true
     virtualization:

@@ -1,6 +1,9 @@
 <?php
 $product = ProductTable::getInstance()->find('VPNMONTHLY');
 if (!$product) return;
+
+$servers = Doctrine::getTable('Server')->find('unlimited');
+if (!count($servers)) return;
 ?>
 <div class="homepage-widget unlimited">
   <h2>Unlimited VPN</h2>

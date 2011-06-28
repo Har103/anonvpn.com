@@ -21,4 +21,9 @@ class serversActions extends sfActions
 
     $this->servers = Doctrine::getTable('Server')->findAll();
   }
+
+  public function executeUnlimited(sfWebRequest $request)
+  {
+
+  }
 }

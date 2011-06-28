@@ -2,6 +2,10 @@ servers:
   url: /vpn-servers-list.html
   param: { module: servers, action: index }
 
+servers_unlimited:
+  url: /servers/unlimited.html
+  param: { module: servers, action: unlimited }
+
 help:
   url: /help.html
   param: { module: help, action: index }

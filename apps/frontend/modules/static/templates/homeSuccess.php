@@ -1,8 +1,4 @@
-<div class="floatl">
-  <?php include_partial('unlimited')?>
-</div>
-<?php /*
-<div class="floatr">
-	<?php include_partial('extras')?>
-</div>
-*/ ?>
+<?php include_partial('unlimited')?>
+<?php include_partial('metered')?>
+<?php include_partial('extras')?>
+<div class="clr"></div>

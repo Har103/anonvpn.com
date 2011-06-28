@@ -6,6 +6,10 @@ servers_unlimited:
   url: /servers/unlimited.html
   param: { module: servers, action: unlimited }
 
+servers_metered:
+  url: /servers/metered.html
+  param: { module: servers, action: metered }
+
 help:
   url: /help.html
   param: { module: help, action: index }

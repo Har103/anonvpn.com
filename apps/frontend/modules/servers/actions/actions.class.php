@@ -26,4 +26,9 @@ class serversActions extends sfActions
   {
 
   }
+
+  public function executeMetered(sfWebRequest $request)
+  {
+
+  }
 }

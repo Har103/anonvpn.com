@@ -1,3 +1,12 @@
+order:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Order
+    module:               orders
+    prefix_path:          /orders
+    column:               id
+    with_wildcard_routes: true
+
 hoster:
   class: sfDoctrineRouteCollection
   options:

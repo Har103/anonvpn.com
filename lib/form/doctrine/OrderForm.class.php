@@ -12,5 +12,8 @@ class OrderForm extends BaseOrderForm
 {
   public function configure()
   {
+    $this->setWidget('id', new sfWidgetFormInputText());
+
+    unset($this['created_at']);
   }
 }

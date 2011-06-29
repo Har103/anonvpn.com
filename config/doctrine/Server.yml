@@ -85,6 +85,9 @@ Server:
       foreignAlias: Servers
       onDelete: CASCADE
       onUpdate: CASCADE
-  indexes:
-    country:
-      fields: [country]
+    Country:
+      class: sfCountry
+      local: country
+      foreign: alpha2
+      onDelete: SET NULL
+      onUpdate: CASCADE

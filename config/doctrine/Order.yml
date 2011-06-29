@@ -1,8 +1,6 @@
 Order:
   actAs:
-    Timestampable:
-      updated:
-        disabled: true
+    Timestampable: ~
   columns:
     id:
       type: integer(5)
@@ -21,6 +19,11 @@ Order:
       type: integer(1)
       unsigned: true
       comment: "Associated server"
+    status:
+      type: enum
+      values: ['pending', 'approved', 'declined', 'refund']
+      notnull: true
+      default: 'pending'
   relations:
     Product:
       local: sku
@@ -41,5 +44,7 @@ Order:
       onDelete: CASCADE
       onUpdate: CASCADE
   indexes:
-    created_at:
-      fields: [created_at]
+    status:
+      fields: [status]
+    time:
+      fields: [created_at, updated_at]

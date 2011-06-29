@@ -5,10 +5,10 @@ Customer:
   password: cipich9A
   Groups: [ members ]
 <?php
-for ($i = 1; $i < 20; $i++)
+for ($i = 1; $i < 10; $i++)
 {
   printf(' Customer_%u:'                     . PHP_EOL, $i);
-  printf('  email: testuser%u@garygolden.me' . PHP_EOL, $i);
+  printf('  email: testuser%u@anonvpn.com'   . PHP_EOL, $i);
   printf('  password: %s'                    . PHP_EOL, trim(`pwgen -1`));
   echo   '  Groups: [ members ]'             . PHP_EOL;
 }

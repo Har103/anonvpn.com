@@ -1,0 +1,12 @@
+<?php if (!getenv('SYMFONY_DEV')) return; ?>
+Hoster:
+  linode:
+    url: linode.com
+  fdcservers:
+    url: fdcservers.net
+  server4all:
+    url: server4all.org
+  vpslink:
+    url: vpslink.com
+  rethinkvps:
+    url: rethinkvps.com

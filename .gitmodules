@@ -7,9 +7,6 @@
 [submodule "lib/vendor/symfony"]
 	path = lib/vendor/symfony
 	url = git://github.com/garygolden/symfony
-[submodule "doc"]
-	path = doc
-	url = https://garygolden@github.com/garygolden/anonvpn-doc
 [submodule "plugins/ioMenuPlugin"]
 	path = plugins/ioMenuPlugin
 	url = https://garygolden@github.com/garygolden/ioMenuPlugin

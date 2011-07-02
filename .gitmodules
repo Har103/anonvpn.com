@@ -1,18 +1,18 @@
 [submodule "plugins/ggTestSuitePlugin"]
 	path = plugins/ggTestSuitePlugin
-	url = https://github.com/garygolden/ggTestSuitePlugin
+	url = git://github.com/Cluster-Studio/ggTestSuitePlugin.git
 [submodule "lib/vendor/TwoCheckout"]
 	path = lib/vendor/TwoCheckout
-	url = https://github.com/garygolden/TwoCheckout.git
+	url = git://github.com/Cluster-Studio/TwoCheckout.git
 [submodule "lib/vendor/symfony"]
 	path = lib/vendor/symfony
-	url = git://github.com/garygolden/symfony
+	url = git://github.com/Cluster-Studio/symfony.git
 [submodule "doc"]
 	path = doc
-	url = https://garygolden@github.com/garygolden/anonvpn-doc
+	url = git://github.com/Cluster-Studio/anonvpn-doc.git
 [submodule "plugins/ioMenuPlugin"]
 	path = plugins/ioMenuPlugin
-	url = https://garygolden@github.com/garygolden/ioMenuPlugin
+	url = git://github.com/Cluster-Studio/ioMenuPlugin.git
 [submodule "plugins/sfCountryPlugin"]
 	path = plugins/sfCountryPlugin
-	url = https://garygolden@github.com/garygolden/sfCountryPlugin.git
+	url = git://github.com/Cluster-Studio/sfCountryPlugin.git
